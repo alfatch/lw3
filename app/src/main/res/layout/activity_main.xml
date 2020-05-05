@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Space
+        android:id="@+id/space0"
+        android:layout_width="16dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space0"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/bListId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Смотреть"></Button>
+
+        <Button
+            android:id="@+id/bAddId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Добавить"></Button>
+
+        <Button
+            android:id="@+id/bReplaceId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Заменить"></Button>
+
+    </LinearLayout>
+
+
+    <Space
+        android:id="@+id/space"
+        android:layout_width="16dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout1" />
+
+    <EditText
+        android:id="@+id/teFioId"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toBottomOf="@+id/space"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <Space
+        android:id="@+id/space2"
+        android:layout_width="16dp"
+        android:layout_height="24dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/teFioId" />
+
+    <LinearLayout
+        android:id="@+id/inserLayoutId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/space2"
+        tools:ignore="MissingConstraints">
+
+        <Button
+            android:id="@+id/bInsertDataId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Записать"
+             />
+
+        <Button
+            android:id="@+id/bCancelInserId"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Отказаться"
+            />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
